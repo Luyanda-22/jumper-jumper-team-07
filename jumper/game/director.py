@@ -16,7 +16,8 @@ class Director:
         is_playing (boolean): Whether or not to keep playing.
         terminal_service: For getting and displaying information on the terminal.
     """
-    a = 4
+
+    
 
     def __init__(self):
         """Constructs a new Director.
