@@ -5,7 +5,7 @@ or the hangman in this case, loses his parachute and dies.
 
 ## Getting Started
 ---
-Make sure you have Python 3.8.0 or newer installed and running on your machine. 
+Make sure you have Python 3.9.0 or newer installed and running on your machine. 
 Open a terminal and browse to the project's root folder. Start the program by 
 running the following command.
 ```
@@ -20,16 +20,15 @@ click the "run" icon.
 The project files and folders are organized as follows:
 ```
 root                    (project root folder)
-+-- hunter              (source code for game)
++-- jumper              (source code for game)
   +-- game              (specific game classes)
-  +-- __init__.py       (python package file)
   +-- __main__.py       (entry point for program)
 +-- README.md           (general info)
 ```
 
 ## Required Technologies
 ---
-* Python 3.8.0
+* Python 3.9.0
 
 ## Authors
 ---
