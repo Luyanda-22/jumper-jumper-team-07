@@ -1,7 +1,6 @@
-from msilib.schema import SelfReg
+from game.Words import words
+from game.Game import Jumper
 from game.terminal_service import TerminalService
-from game.hider import Hider_word
-from game.jumper import Jumper
 
 """
     Update the code and the comments as you change the code for your game.  You will be graded on following the
@@ -28,9 +27,8 @@ class Director:
             self (Director): an instance of Director.
         """
         self._is_playing = True
-        self._letter = ''
-        self._hider = Hider_word()
-        self._user_player = Jumper()
+        self._jumper = Jumper()
+        self._word = words
         self._terminal_service = TerminalService()
 
     def start_game(self):
@@ -50,7 +48,7 @@ class Director:
         Args:
             self (Director): An instance of Director.
         """
-        self._letter = self._terminal_service.read_text('Guess a letter [a - z]: ')
+        self._word
 
     def _do_updates(self):
         """Update this comment
@@ -58,9 +56,7 @@ class Director:
         Args:
             self (Director): An instance of Director.
         """
-        self._hider.checking_guess(self._letter)
-        self._hider.add_letter(self._letter)
-
+        self._jumper.process()
 
     def _do_outputs(self):
         """Update this comment
@@ -68,6 +64,6 @@ class Director:
         Args:
             self (Director): An instance of Director.
         """
-        self._terminal_service.write_text(self._hider.get_guesses())
+        pass
 
         #We need to end the game at the end of this function 

@@ -1,6 +1,3 @@
-from game.jumper import Jumper
-
-
 class TerminalService:
     """A service that handles terminal operations.
     
