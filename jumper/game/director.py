@@ -69,3 +69,5 @@ class Director:
             self (Director): An instance of Director.
         """
         self._terminal_service.write_text(self._hider.get_guesses())
+
+        #We need to end the game at the end of this function 
