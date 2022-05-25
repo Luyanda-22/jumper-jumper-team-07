@@ -1,3 +1,6 @@
+from game.jumper import Jumper
+
+
 class TerminalService:
     """A service that handles terminal operations.
     
@@ -37,3 +40,7 @@ class TerminalService:
             text (string): The text to display.
         """
         print(text)
+
+    def display_jumper(self, jumper):
+        for i in range(len(jumper)):
+            print(f"{jumper[i]}")
