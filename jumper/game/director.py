@@ -39,7 +39,6 @@ class Director:
         Args:
             self (Director): an instance of Director.
         """
-        self._hider.random_word()
         while self._is_playing:
             self._get_inputs()
             self._do_updates()
@@ -61,7 +60,7 @@ class Director:
         """
         self._hider.checking_guess(self._letter)
         self._hider.add_letter(self._letter)
-        
+
 
     def _do_outputs(self):
         """Update this comment
@@ -69,4 +68,4 @@ class Director:
         Args:
             self (Director): An instance of Director.
         """
-        pass
+        self._terminal_service.write_text(self._hider.get_guesses())
