@@ -1,5 +1,5 @@
 from game.Words import words
-from game.Jumper import Guy
+from game.Jumper import Jumper
 from game.terminal_service import TerminalService
 from game.Game import Game
 

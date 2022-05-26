@@ -1,6 +1,6 @@
 # DELETE ALL DEBUGGING LINES WHEN THE PROGRAM IS FINISHED
 from game.Words import words
-from game.Jumper import Guy
+from game.Jumper import Jumper
 
 class Game:
     """This is the part that runs the game "Jumper."""
@@ -10,7 +10,7 @@ class Game:
         self.word = words
         self.guess = ""
         self.reveal = list((len(self.word)*'_'))
-        self.guy = Guy()
+        self.guy = Jumper()
         # variables for win or lose
         self.won = False
         self.lose = False
