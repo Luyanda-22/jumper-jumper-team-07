@@ -10,11 +10,3 @@ words_list = ["apricot", "grounds", "analyst", "magnetic", "desire", "foster",
 "injection", "monopoly"]
 
 words = random.choice(words_list).upper()
-
-'''def get_random_word(self):
-    """PUT COMMENT HERE"""
-    # choose a random word
-    words = random.choice(self.words_list).lower()
-    # split word into a list
-    split_word = list(words)
-    return split_word'''

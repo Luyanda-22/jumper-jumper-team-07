@@ -9,15 +9,7 @@ class Jumper:
         # variables for the random word
         self.word = words
         self.guess = ""
-        #self.split_word = self.random_word.get_random_word()
-        # SELF.GUESS WILL BE USED IN THE DIRECTOR CLASS TO GET THE USER INPUT
-        # self.guess = letter_guess
         self.reveal = list((len(self.word)*'_'))
-
-        # variables for the jumper
-        #self.jumper_class = Jumper()
-        #self.jumper_list = self.jumper_class.jumper
-        #self.print_jumper = self.jumper_class.print_jumper
 
         # variables for win or lose
         self.won = False
