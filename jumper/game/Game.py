@@ -1,8 +1,8 @@
 # DELETE ALL DEBUGGING LINES WHEN THE PROGRAM IS FINISHED
 from game.Words import words
-from game.Guy import guy
+from game.Jumper import Guy
 
-class Jumper:
+class Game:
     """This is the part that runs the game "Jumper."""
     def __init__(self):
         """These are attributes to the Jumper game"""
@@ -10,7 +10,7 @@ class Jumper:
         self.word = words
         self.guess = ""
         self.reveal = list((len(self.word)*'_'))
-
+        self.guy = Guy()
         # variables for win or lose
         self.won = False
         self.lose = False
@@ -63,14 +63,14 @@ class Jumper:
                 self.lose = True
 
             if self.lose == True:
-                print(guy[4])
+                print(self.guy.guy[4])
                 print('You did not save the Jumper...')
                 self.lost = False
                 print(self.word)
 
     def show(self):
         """This displays the guy from the Guy class"""
-        print(guy[4 - self.lives])
+        print(self.guy.guy[4 - self.lives])
         print(self.reveal)
 
         if self.lives > 0:

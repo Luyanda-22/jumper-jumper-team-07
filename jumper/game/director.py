@@ -1,6 +1,7 @@
 from game.Words import words
-from game.Game import Jumper
+from game.Jumper import Guy
 from game.terminal_service import TerminalService
+from game.Game import Game
 
 """
     Update the code and the comments as you change the code for your game.  You will be graded on following the
@@ -27,7 +28,7 @@ class Director:
             self (Director): an instance of Director.
         """
         self._is_playing = True
-        self._jumper = Jumper()
+        self._game = Game()
         self._word = words
         self._terminal_service = TerminalService()
 
@@ -56,7 +57,7 @@ class Director:
         Args:
             self (Director): An instance of Director.
         """
-        self._jumper.process()
+        self._game.process()
 
     def _do_outputs(self):
         """Update this comment
